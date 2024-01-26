@@ -4,7 +4,7 @@ T& array<T>::operator[](int n) {
 	if (n >= 0 && n < _length) {
 		return _arr[n];
 	}
-	return -1;
+	throw std::out_of_range("Index out of bounds");
 }
 template<typename T>
 bool array<T>::add(T value)
