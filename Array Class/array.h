@@ -16,7 +16,7 @@ public:
 	T& operator[](int);
 	bool add(T value);
 
-	bool removeAt(int n);
+	bool removeAt(size_t n);
 
 	long long int indexOf(T value);
 

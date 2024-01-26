@@ -25,8 +25,9 @@ bool array<T>::add(T value)
 }
 
 template<typename T>
-bool array<T>::removeAt(int n)
+bool array<T>::removeAt(size_t n)
 {
+	if (n >= _length) return false;
 	T* temp = new T[_length - 1];
 	if (temp == nullptr) {
 		return false;
