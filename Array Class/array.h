@@ -1,6 +1,6 @@
 #ifndef ARRAY_H
 #define ARRAY_H
-template<typename T>
+template<typename T = int>
 class array {
 private:
 	T* _arr;
@@ -13,5 +13,6 @@ public:
 	~array() {
 		delete[] _arr;
 	}
+	T& operator[](int);
 };
 #endif
