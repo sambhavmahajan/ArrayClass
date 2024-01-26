@@ -14,5 +14,6 @@ public:
 		delete[] _arr;
 	}
 	T& operator[](int);
+	bool add(T value);
 };
 #endif
