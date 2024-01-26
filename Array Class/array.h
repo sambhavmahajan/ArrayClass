@@ -5,7 +5,7 @@ class array {
 private:
 	T* _arr;
 public:
-	array(size_t length)
+	inline array(size_t length)
 	{
 		_arr = new T[size_t];
 	}
