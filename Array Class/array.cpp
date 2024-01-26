@@ -47,6 +47,16 @@ bool array<T>::removeAt(int n)
 }
 
 template<typename T>
+long long int array<T>::indexOf(T value)
+{
+	for (long long int i = 0; i < _length; i++)
+	{
+		if (_arr[i] == value) return i;
+	}
+	return -1;
+}
+
+template<typename T>
 size_t array<T>::length() const
 {
 	return _length;

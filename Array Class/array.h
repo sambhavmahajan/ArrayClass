@@ -18,6 +18,8 @@ public:
 
 	bool removeAt(int n);
 
+	long long int indexOf(T value);
+
 	size_t length() const;
 };
 #endif
