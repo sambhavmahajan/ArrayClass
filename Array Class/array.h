@@ -10,5 +10,8 @@ public:
 	{
 		_arr = new T[size_t];
 	}
+	~array() {
+		delete[] _arr;
+	}
 };
 #endif
