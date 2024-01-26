@@ -4,5 +4,10 @@ template<typename T>
 class array {
 private:
 	T* _arr;
+public:
+	array(size_t length)
+	{
+		_arr = new T[size_t];
+	}
 };
 #endif
