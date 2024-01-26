@@ -20,8 +20,11 @@ bool array<T>::add(T value)
 	temp[_length] = value;
 	delete[] _arr;
 	_arr = temp;
+	_length++;
 	return true;
 }
+
+
 
 template<typename T>
 size_t array<T>::length() const
