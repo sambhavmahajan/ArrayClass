@@ -22,3 +22,9 @@ bool array<T>::add(T value)
 	_arr = temp;
 	return true;
 }
+
+template<typename T>
+size_t array<T>::length() const
+{
+	return _length;
+}

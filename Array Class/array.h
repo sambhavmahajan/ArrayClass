@@ -15,5 +15,6 @@ public:
 	}
 	T& operator[](int);
 	bool add(T value);
+	size_t length() const;
 };
 #endif
