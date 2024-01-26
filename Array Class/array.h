@@ -16,6 +16,8 @@ public:
 	T& operator[](int);
 	bool add(T value);
 
+	bool removeAt(int n);
+
 	size_t length() const;
 };
 #endif

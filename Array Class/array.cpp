@@ -24,7 +24,27 @@ bool array<T>::add(T value)
 	return true;
 }
 
-
+template<typename T>
+bool array<T>::removeAt(int n)
+{
+	T* temp = new T[_length - 1];
+	if (temp == nullptr) {
+		return false;
+	}
+	bool t = false;
+	for (size_t i = 0; i < _length; i++)
+	{
+		if (i == n) {
+			break;
+			t = true;
+		}
+		temp[i - t] = _arr[i];
+	}
+	delete[] _arr;
+	_arr = temp;
+	_length--;
+	return true;
+}
 
 template<typename T>
 size_t array<T>::length() const
